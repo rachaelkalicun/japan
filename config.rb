@@ -83,11 +83,10 @@ activate :blog do |blog|
   blog.permalink = ":title"
   blog.layout = "blog"
   blog.default_extension = ".markdown"
-  # blog.sources = "/posts/"
+  blog.layout = "article_layout"
 end
 
 set :markdown_engine, :redcarpet
 set :markdown,  :fenced_code_blocks => true, :autolink => true, :smartypants => true
 activate :directory_indexes
 activate :livereload
-page "blog/*", :layout => :article_layout
