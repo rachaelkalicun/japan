@@ -1,0 +1,13 @@
+<nav class="pagenav">
+  <h3>Skip&nbsp;to:</h3> 
+  <ul>
+    <li><a href="#demo-settings">Basic Settings</a></li>
+    <li><a href="#demo-mobile">Mobile Layout</a></li>
+  </ul>
+  <h2>Recent Articles</h2>
+  <ol>
+    <% blog.articles[0...10].each do |article| %>
+      <li><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></li>
+    <% end %>
+  </ol>
+</nav>

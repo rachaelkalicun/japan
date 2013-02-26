@@ -1,0 +1,55 @@
+@import "susy";
+
+$total-columns  : 4;
+$column-width   : 4em;
+$gutter-width   : 1em;
+$grid-padding   : $gutter-width;
+
+$break1: 8;
+$break2: 12;
+
+.page { 
+  @include container ($total-columns, $break1, $break2);
+  
+  @include susy-grid-background;
+
+  @include at-breakpoint($break1)  {
+    @include susy-grid-background;
+  }
+
+  @include at-breakpoint($break2)  {
+    @include susy-grid-background;    
+  }
+
+  .contentinfo {
+    margin: 0 0 - $grid-padding;
+    padding: 0 $grid-padding;
+    background: none repeat scroll 0 0 #DC322F;
+    color: #FDF6E3;
+    padding-bottom: 1.25em;
+    padding-top: 1.25em;
+    text-shadow: 0 1px 0 #B9221F;
+    clear: both;
+  }
+}
+
+@include at-breakpoint($break1)  {
+
+/* -- All the styles for 8 columns go here ($break-1 = 8...see my variables above) --*/
+  
+}
+
+@include at-breakpoint($break2)  {
+
+/* -- All the styles for 12 columns go here ($break-2 = 12...see my variables above) --*/
+
+  .banner { 
+    @include prefix(3, $break2); 
+    background: green;
+  }
+  .pagenav { @include span-columns(2,$break2); }
+  .main { @include span-columns(10 omega, $break2); }
+  .posts {
+        @include span-columns(6, $break2)
+    }
+}
