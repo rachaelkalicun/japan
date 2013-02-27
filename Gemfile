@@ -4,6 +4,5 @@ source 'http://rubygems.org'
 
 gem "middleman", "~>3.0.12"
 gem "susy", "~>1.0.5"
-gem "redcarpet"
+gem "slim"
 gem "middleman-blog"
-gem "middleman-livereload"

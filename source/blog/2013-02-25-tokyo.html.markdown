@@ -1,7 +1,0 @@
----
-title: tokyo
-date: 2013-02-25
-tags:
----
-
-Hello World Rachael

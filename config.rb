@@ -1,7 +1,7 @@
 ###
 # Compass
 ###
-
+require 'slim'
 # Susy grids in Compass
 # First: gem install susy
 # require 'susy'
@@ -82,11 +82,9 @@ activate :blog do |blog|
   blog.prefix = "blog"
   blog.permalink = ":title"
   blog.layout = "blog"
-  blog.default_extension = ".markdown"
+  blog.default_extension = ".slim"
   blog.layout = "article_layout"
 end
 
-set :markdown_engine, :redcarpet
-set :markdown,  :fenced_code_blocks => true, :autolink => true, :smartypants => true
+set :markdown, :slim
 activate :directory_indexes
-activate :livereload

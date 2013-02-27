@@ -1,8 +1,0 @@
----
-title: kyoto
-date: 2013-02-25 22:11 -07:00
-tags:
----
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni nam sapiente cumque maiores aperiam voluptas ipsa fugiat suscipit sint impedit sit eveniet atque reprehenderit vel laboriosam aut dolores voluptatem.
-
