@@ -88,3 +88,7 @@ end
 
 set :markdown, :slim
 activate :directory_indexes
+
+compass_config do |config|
+  config.sass_options = {:debug_info => true}
+end
