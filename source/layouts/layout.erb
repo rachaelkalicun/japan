@@ -13,12 +13,13 @@
   </head>
   
   <body class="<%= page_classes %>">
-    <div class="page">
+    <section class="page">
       <%= partial "shared/header" %>
-      <%= partial "shared/sidebar" %>
-      <img src="<%= lorem.image('300x400') %>">
-      <article class="main"><%= yield %></article>
+      <%= partial "shared/nav" %>
+      <article class="main" role="main">
+        <%= yield %>
+      </article>
       <%= partial "shared/footer" %>
-    </div>
+    </section>
   </body>
 </html>
