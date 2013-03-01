@@ -27,3 +27,16 @@ h1 {
 .contentinfo {
   background: red;
 }
+
+img, object, embed, iframe, .iframe {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    border: 0;
+}
+
+@media \0screen {
+  img { 
+    width: auto; /* for ie 8 */
+  }
+}
