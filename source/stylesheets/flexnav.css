@@ -1,0 +1,326 @@
+/* Flexnav Base Styles */
+/* line 17, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* Globals */
+/* line 25, ../sass/flexnav.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 29, ../sass/flexnav.scss */
+.flexnav {
+  *zoom: 1;
+  margin: 0 auto;
+  width: 100%;
+}
+/* line 38, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.flexnav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 34, ../sass/flexnav.scss */
+.flexnav li {
+  font-size: 100%;
+  position: relative;
+}
+/* line 38, ../sass/flexnav.scss */
+.flexnav li a {
+  position: relative;
+  display: block;
+  padding: .96em;
+  z-index: 2;
+  overflow: hidden;
+  color: #222222;
+  background: #a6a6a2;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+/* line 48, ../sass/flexnav.scss */
+.flexnav li ul {
+  width: 100%;
+  display: none;
+}
+/* line 52, ../sass/flexnav.scss */
+.flexnav li ul li {
+  float: none;
+  width: 100%;
+}
+/* line 56, ../sass/flexnav.scss */
+.flexnav li ul li a {
+  display: block;
+  background: #b2b2af;
+}
+/* line 60, ../sass/flexnav.scss */
+.flexnav ul li ul li a {
+  background: #bfbfbc;
+}
+/* line 63, ../sass/flexnav.scss */
+.flexnav ul li ul li ul li a {
+  background: #cbcbc9;
+}
+/* line 66, ../sass/flexnav.scss */
+.flexnav .touch-button {
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  background: #acaca1;
+  background: rgba(0, 0, 0, 0.075);
+  text-align: center;
+}
+/* line 77, ../sass/flexnav.scss */
+.flexnav .touch-button:hover {
+  cursor: pointer;
+}
+/* line 80, ../sass/flexnav.scss */
+.flexnav .touch-button .navicon {
+  position: relative;
+  top: 1.4em;
+  font-size: 12px;
+  color: #666;
+}
+
+/* line 88, ../sass/flexnav.scss */
+.menu-button {
+  position: relative;
+  display: block;
+  padding: 1em;
+  background: #a6a6a2;
+  color: #222222;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+/* line 97, ../sass/flexnav.scss */
+.menu-button .touch-button {
+  background: transparent;
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  text-align: center;
+}
+/* line 108, ../sass/flexnav.scss */
+.menu-button .touch-button .navicon {
+  font-size: 16px;
+  position: relative;
+  top: 1em;
+  color: #666;
+}
+
+@media all and (min-width: 800px) {
+  /* line 120, ../sass/flexnav.scss */
+  .flexnav li {
+    position: relative;
+    list-style: none;
+    float: left;
+    display: block;
+    background-color: #a6a6a2;
+    width: 20%;
+  }
+  /* line 128, ../sass/flexnav.scss */
+  .flexnav li:hover > ul {
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+    display: block;
+    top: 3.1em;
+    position: absolute;
+  }
+  /* line 137, ../sass/flexnav.scss */
+  .flexnav.lg-screen li:hover > ul, .flexnav.sm-screen li:hover > ul {
+    display: none;
+  }
+  /* line 140, ../sass/flexnav.scss */
+  .flexnav li a {
+    border-left: 1px solid #acaca1;
+    border-bottom: none;
+  }
+  /* line 144, ../sass/flexnav.scss */
+  .flexnav li > ul {
+    position: absolute;
+    top: auto;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    height: 1px;
+    z-index: 1;
+  }
+  /* line 153, ../sass/flexnav.scss */
+  .flexnav li ul li ul {
+    top: 0;
+  }
+  /* line 156, ../sass/flexnav.scss */
+  .flexnav li ul li a {
+    border-bottom: none;
+  }
+  /* line 159, ../sass/flexnav.scss */
+  .flexnav li ul.open {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+  }
+  /* line 165, ../sass/flexnav.scss */
+  .flexnav li ul.open ul.open {
+    margin-left: 100%;
+    top: 0;
+  }
+  /* line 170, ../sass/flexnav.scss */
+  .flexnav ul li:hover ul {
+    margin-left: 100%;
+    top: 0;
+  }
+
+  /* line 175, ../sass/flexnav.scss */
+  .menu-button {
+    display: none;
+  }
+}
+/* line 183, ../sass/flexnav.scss */
+.oldie .flexnav li {
+  position: relative;
+  list-style: none;
+  float: left;
+  display: block;
+  background-color: #a6a6a2;
+  width: 20%;
+}
+/* line 191, ../sass/flexnav.scss */
+.oldie .flexnav li:hover > ul {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+  display: block;
+  top: 3.1em;
+  position: absolute;
+}
+/* line 200, ../sass/flexnav.scss */
+.oldie .flexnav.lg-screen li:hover > ul, .oldie .flexnav.sm-screen li:hover > ul {
+  display: none;
+}
+/* line 203, ../sass/flexnav.scss */
+.oldie .flexnav li a {
+  border-left: 1px solid #acaca1;
+  border-bottom: none;
+}
+/* line 207, ../sass/flexnav.scss */
+.oldie .flexnav li > ul {
+  position: absolute;
+  top: auto;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  height: 1px;
+  z-index: 1;
+}
+/* line 216, ../sass/flexnav.scss */
+.oldie .flexnav li ul li ul {
+  top: 0;
+}
+/* line 219, ../sass/flexnav.scss */
+.oldie .flexnav li ul li a {
+  border-bottom: none;
+}
+/* line 222, ../sass/flexnav.scss */
+.oldie .flexnav li ul.open {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  height: auto;
+}
+/* line 228, ../sass/flexnav.scss */
+.oldie .flexnav li ul.open ul.open {
+  margin-left: 100%;
+  top: 0;
+}
+/* line 233, ../sass/flexnav.scss */
+.oldie .flexnav ul li:hover ul {
+  margin-left: 100%;
+  top: 0;
+}
+/* line 238, ../sass/flexnav.scss */
+.oldie .menu-button {
+  display: none;
+}
