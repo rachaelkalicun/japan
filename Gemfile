@@ -3,6 +3,6 @@
 source 'http://rubygems.org'
 
 gem "middleman", "~>3.0.12"
-gem "susy", "~>1.0.5"
+gem "susy"
 gem "slim"
 gem "middleman-blog"
