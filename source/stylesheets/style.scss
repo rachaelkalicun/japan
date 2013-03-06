@@ -1,42 +1,58 @@
 @import 'compass_includes';
+body {
 
-h1 {
-  color: purple;
-}
+  font: 100%/1.4 helvetica, arial, sans-serif;
 
-.banner {
-  background: green;
-}
-
-.pagenav {
-  background: red;
-}
-
-.main {
-  background: yellow;
-}
-
-.content {
-  background: pink;
-}
-
-.summary {
-  background: purple;
-}
-
-.contentinfo {
-  background: red;
-}
-
-img, object, embed, iframe, .iframe {
-    display: block;
-    height: auto;
-    max-width: 100%;
-    border: 0;
-}
-
-@media \0screen {
-  img { 
-    width: auto; /* for ie 8 */
+  p {
+    font-style: 1.8em;
+    line-height: 1.4;
+    margin: 3.3em 0;
   }
-}
+
+  .banner {
+      background: black;
+    }
+
+  .page {
+
+    img, object, embed, iframe, .iframe {
+      display: block;
+      height: auto;
+      max-width: 100%;
+      border: 0;
+    }
+
+    h1 {
+      color: purple;
+    }
+
+    .main {
+      background: yellow;
+      clear: both;
+    }
+
+    .content {
+      background: pink;
+    }
+
+    .summary {
+      background: purple;
+    }
+
+    .contentinfo {
+      background: red;
+    }
+
+    @media \0screen {
+      img { 
+        width: auto; /* for ie 8 */
+      }
+    }
+
+
+  } /*.page*/
+} /*body*/
+
+
+
+
