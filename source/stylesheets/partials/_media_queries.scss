@@ -1,0 +1,67 @@
+@include at-breakpoint($tablet) {
+  .inner { 
+    /*@include susy-grid-background;*/
+    @include container($tablet); 
+  }
+  .page {
+    /*@include susy-grid-background;*/
+    .nav {
+      @include with-grid-settings(8,4em,1em,1em) {
+        .container { 
+          /*@include susy-grid-background;*/
+          @include container;
+          #toggle:checked ~ nav #nav, #nav { 
+            list-style-type: none;
+            padding: 0;
+            top: 2em;
+            right: 2%;
+            left: 35px;
+            @include box-shadow(0 0 0 0);
+          }
+        }
+      }
+    }
+  }
+}
+
+@include at-breakpoint($desktop) {
+  .inner { 
+    /*@include susy-grid-background;*/
+    @include container($desktop); 
+  }
+  .page {
+    /*@include susy-grid-background;*/
+    .btn {
+      display: none;
+    }
+    .nav {
+      @include with-grid-settings(12,4em,1em,1em) {
+        .container { 
+          /*@include susy-grid-background;*/
+          @include container;
+          #nav { 
+            #close { 
+              display: none;
+            }
+            li {
+              display: inline;
+              float: left;
+              &.selected {
+                font-weight: bold;
+              }
+              a {
+                line-height: 1em;
+                height: 2em;
+                display: inline;
+                float: right;
+                background: transparent;
+                padding: 0 1em;
+                border-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }  
+}

@@ -1,0 +1,21 @@
+/*start layout*/
+
+$total-columns: 7;
+$column-width: 4em;
+$gutter-width: 1em;
+$grid-padding: $gutter-width;
+
+$tablet: 8;
+$desktop: 12;
+
+/*end layout*/
+
+.inner { 
+  @include susy-grid-background;
+  @include container ($total-columns, $tablet, $desktop); 
+}
+
+.page { 
+  @include susy-grid-background;
+  @include container ($total-columns, $tablet, $desktop);
+}

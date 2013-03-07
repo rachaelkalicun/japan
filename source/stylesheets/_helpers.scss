@@ -1,0 +1,87 @@
+/*Helpers*/
+
+/*Variables*/
+
+/*Colors*/
+$light: #fff;
+$medium: #ccc;
+$dark: #000;
+
+$link: #00f;
+$link-hover: darken($link, 20%);
+
+/*Compass Vertical Rhythm*/
+$base-font-size: 16px;
+$base-line-height: 24px;
+@include establish-baseline;
+$relative-font-sizing: true;
+/*usage: 
+@include adjust-font-size-to(42px);
+@include adjust-font-size-to(12px, 2/3); 
+reference: http://atendesigngroup.com/blog/vertical-rhythm-compass
+*/
+
+
+/*Mixins*/
+
+@mixin list_style_none {
+  background: none;
+  padding-left: 0;
+  list-style-type: none;
+  list-style-position: outside;
+}
+
+@mixin navigation-list {
+  list-style-type:none;
+  padding:0;
+  margin:0;
+  overflow:hidden;
+  > li {
+      display:block;
+      float:left;
+      &:last-child {
+          margin-right:0px;
+      }
+  }
+}
+
+/*@mixin box-emboss($opacity, $opacity2) {
+  box-shadow: white($opacity) 0 1px 0, inset black($opacity2) 0 1px 0;
+}*/
+/*usage: @include box-emboss(0.8, 0.05);*/
+
+/*@mixin letterpress($opacity){
+  text-shadow: white($opacity) 0 1px 0;
+}*/
+
+/*Placeholder Selectors Only to Be Used with @extend 
+reference: http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#placeholders*/
+
+%clearfix {
+   &:after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden;
+  }
+}
+
+%image-replacement {
+  overflow: hidden;
+  text-align: left;
+  display: block;
+  line-height:0;
+  text-indent: -1000em;
+}
+
+/*Functions*/
+
+@function black($opacity) {
+  @return rgba(0, 0, 0, $opacity)
+}
+
+@function white($opacity) {
+  @return rgba(255, 255, 255, $opacity)
+}
+/*usage for opacity: color: white(0.9); */
