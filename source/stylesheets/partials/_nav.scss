@@ -51,9 +51,10 @@
   }
   .nav {
     position: absolute;
-    top: 4em;
+    top: 6em;
     left: 0;
     right: 0;
+    background: red;
     @include with-grid-settings(7,4em,1em,1em) {
       .container { 
         /*@include susy-grid-background;*/
@@ -62,6 +63,7 @@
           list-style-type: none;
           padding: 0;
           z-index: 10;
+          margin: 0;
           a {
             height: 0;
             line-height: 0;

@@ -26,11 +26,11 @@
 
 @include at-breakpoint($desktop) {
   .inner { 
-    /*@include susy-grid-background;*/
+    @include susy-grid-background;
     @include container($desktop); 
   }
   .page {
-    /*@include susy-grid-background;*/
+    @include susy-grid-background;
     .btn {
       display: none;
     }
@@ -55,13 +55,19 @@
                 display: inline;
                 float: right;
                 background: transparent;
-                padding: 0 1em;
+                padding: 0 .9em;
                 border-bottom: 0;
               }
             }
           }
         }
       }
+    }
+    .content {
+      @include span-columns(9, $desktop);
+    }
+    .summary { 
+      @include span-columns(3 omega, $desktop); 
     }
   }  
 }
