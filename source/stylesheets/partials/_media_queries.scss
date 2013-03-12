@@ -6,7 +6,7 @@
   .page {
     /*@include susy-grid-background;*/
     .nav {
-      @include with-grid-settings(8,4em,1em,1em) {
+      @include with-grid-settings(8,5em,1em,1em) {
         .container { 
           /*@include susy-grid-background;*/
           @include container;
@@ -35,7 +35,7 @@
       display: none;
     }
     .nav {
-      @include with-grid-settings(12,4em,1em,1em) {
+      @include with-grid-settings(12,5em,1em,1em) {
         .container { 
           /*@include susy-grid-background;*/
           @include container;
@@ -64,10 +64,10 @@
       }
     }
     .content {
-      @include span-columns(9, $desktop);
+      @include span-columns(8, $desktop);
     }
     .summary { 
-      @include span-columns(3 omega, $desktop); 
+      @include span-columns(4 omega, $desktop); 
     }
   }  
 }
