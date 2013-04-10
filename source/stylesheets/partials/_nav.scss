@@ -51,10 +51,10 @@
   }
   .nav {
     position: absolute;
-    top: 6em;
+    top: 3em;
     left: 0;
     right: 0;
-    background: red;
+    /*background: red;*/
     @include with-grid-settings(7,4em,1em,1em) {
       .container { 
         /*@include susy-grid-background;*/
@@ -72,7 +72,7 @@
             background: $medium;
             padding: 0 0 0 5%;
             overflow: hidden;
-            color: $dark;
+            color: $light;
             text-decoration: none;
             @include transition-duration(0.5s);
           }

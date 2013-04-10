@@ -11,11 +11,11 @@ $desktop: 12;
 /*end layout*/
 
 .inner { 
-  @include susy-grid-background;
+  /*@include susy-grid-background;*/
   @include container ($total-columns, $tablet, $desktop); 
 }
 
 .page { 
-  @include susy-grid-background;
+  /*@include susy-grid-background;*/
   @include container ($total-columns, $tablet, $desktop);
 }

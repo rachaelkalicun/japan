@@ -1,17 +1,27 @@
 .page {
-  h1 {
-    color: purple;
+  background: $light;
+  @include opacity(.85);
+  h1, h2, h3 {
+    color: $subcolor;
+    font-family: 'Ovo', serif;
+    font-weight: normal;
+    text-transform: uppercase;
   }
 
-  .main {
-    background: yellow;
+  .article {
+    /*background: $light;*/
   }
 
   .content {
-    background: pink;
+    /*background: $light;*/
   }
 
   .summary {
-    background: purple;
+    @include border-bottom-radius(20px);
+    background: $subcolor;
+    color: $light;
+    h3 {
+      color: $light;
+    }
   }
 }
