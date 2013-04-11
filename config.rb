@@ -58,7 +58,7 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
-Time.zone = "US/Mountain"
+Time.zone = "US/Eastern"
 
 # Build-specific configuration
 configure :build do
