@@ -1,6 +1,6 @@
 .page {
-  background: $light;
-  @include opacity(.85);
+  /*background: $light;*/
+  /*@include opacity(.85);*/
   h1, h2, h3 {
     color: $subcolor;
     font-family: 'Ovo', serif;
@@ -23,5 +23,12 @@
     h3 {
       color: $light;
     }
+  }
+  #map {
+    border: 2px solid white;
+    @include opacity(.9);
+    margin: 100px auto 0 auto;
+    width: 330px;
+    height: 300px;
   }
 }
