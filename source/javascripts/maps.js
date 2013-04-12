@@ -127,7 +127,7 @@ $(document).ready(function(){
         // Set a custom formatter for tooltips
         // Provide a function that returns html to be used in tooltip
         interaction.formatter(function(feature) {
-            var o = '<img height="59" width="59" src="' + feature.properties.image + '">' + '<p style="margin: 0">' + feature.properties.city + '</p>';
+            var o = '<img height="65" width="100" src="' + feature.properties.image + '">' + '<p style="margin: 0">' + feature.properties.city + '</p>';
             return o;
         });
 
