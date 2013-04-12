@@ -12,7 +12,8 @@ body {
   @import "compass/layout/sticky-footer";
   @include sticky-footer(72px, "#wrapper", "#footer_push", "#footer");
   -webkit-animation: bugfix infinite 1s; /*checkbox hack (nav) fix for android*/
-  font-family: "Questrial", "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 300;
   /*background-color: $light;*/
   color: $dark;
   a {
