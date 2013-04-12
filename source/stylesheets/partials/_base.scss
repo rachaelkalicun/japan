@@ -4,11 +4,15 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  height: 100%;
 }
 
 body {
+  height: 100%;
+  @import "compass/layout/sticky-footer";
+  @include sticky-footer(72px, "#wrapper", "#footer_push", "#footer");
   -webkit-animation: bugfix infinite 1s; /*checkbox hack (nav) fix for android*/
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Questrial", "Helvetica Neue", Helvetica, sans-serif;
   /*background-color: $light;*/
   color: $dark;
   a {

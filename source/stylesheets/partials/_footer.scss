@@ -1,4 +1,6 @@
 .contentinfo {
-  /*background: red;*/
+  background: $light;
   clear: both;
+  @include opacity(.8);
+  text-align:center;
 }
