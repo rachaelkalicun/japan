@@ -58,7 +58,7 @@
             "image": "http://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/NYC_Montage_2011.jpg/275px-NYC_Montage_2011.jpg",
             "url": "/blog/nara",
             "city": "Nara",
-            'marker-color': '#a42b20',
+            'marker-color': '#9d3b1d',
             'marker-symbol': 'star-stroked',
             "marker-size": "small"
         }
@@ -78,7 +78,7 @@
             "image": "http://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/NYC_Montage_2011.jpg/275px-NYC_Montage_2011.jpg",
             "url": "/blog/mt-koya",
             "city": "Mt. Koya",
-            'marker-color': '#a42b20',
+            'marker-color': '#9d3b1d',
             'marker-symbol': 'star-stroked',
             "marker-size": "small"
         }
@@ -88,7 +88,7 @@
             "image": "http://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/NYC_Montage_2011.jpg/275px-NYC_Montage_2011.jpg",
             "url": "/blog/hiroshima",
             "city": "Hiroshima",
-            'marker-color': '#a42b20',
+            'marker-color': '#9d3b1d',
             'marker-symbol': 'star-stroked',
             "marker-size": "small"
         }
@@ -125,10 +125,8 @@
     // Set a custom formatter for tooltips
     // Provide a function that returns html to be used in tooltip
     interaction.formatter(function(feature) {
-        var o = '<a href="' + feature.properties.url + '">' +
-            '<img height="59" width="59" src="' + feature.properties.image + '">' +
-            '<p style="margin: 0">' + feature.properties.city + '</p>' +
-            '</a>';
+        var o = '<img height="59" width="59" src="' + feature.properties.image + '">' +
+            '<p style="margin: 0">' + feature.properties.city + '</p>';
         return o;
     });
 
@@ -136,8 +134,8 @@
 
     // Set iniital center and zoom
     map.centerzoom({
-        lat: 36.6833,
-        lon: 135.7667
+        lat: 37.8833,
+        lon: 136
     }, 5);
 
     
