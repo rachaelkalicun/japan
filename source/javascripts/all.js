@@ -8,5 +8,4 @@ $(document).ready(function(){
     useTransparentGif: true,
     transparentGifSrc: '/images/spacer.gif' // use for IE
   });
-
 });
