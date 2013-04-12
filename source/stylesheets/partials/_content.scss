@@ -10,26 +10,26 @@ p {
 }
 
 .page {
+  #map {
+    border: 2px solid white;
+    margin-top: 50px;
+    @include opacity(.9);
+    @include single-box-shadow;
+    height: 310px;
+    h3, p {
+      position: relative;
+      z-index: 1; 
+      margin: 0;
+    }
+    h3 {
+      margin-top: 10px;
+    }
+  }
   .content {
     background: $light;
-    @include opacity(.8);
+    @include opacity(.9);
   }
   .summary {
-    #map {
-      border: 2px solid white;
-      @include opacity(.9);
-      margin-top: 0px;
-      width: 300px;
-      height: 250px;
-      float: right;
-      h3, p {
-        position: relative;
-        z-index: 1; 
-        margin: 0;
-      }
-      h3 {
-        margin-top: 10px;
-      }
-    }
+    
   }
 }

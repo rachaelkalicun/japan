@@ -5,6 +5,10 @@
   }
   .page {
     /*@include susy-grid-background;*/
+    #mapwrapper {
+      @include span-columns(6, $tablet);
+      @include prefix(1, $tablet);
+    }
     .nav {
       @include with-grid-settings(8,5em,1em,1em) {
         .container { 
@@ -25,14 +29,19 @@
 }
 
 @include at-breakpoint($desktop) {
+  
   .inner { 
-    @include susy-grid-background;
+    /*@include susy-grid-background;*/
     @include container($desktop); 
   }
   .page {
-    @include susy-grid-background;
+    /*@include susy-grid-background;*/
     .btn {
       display: none;
+    }
+    #mapwrapper {
+      @include span-columns(6, $desktop);
+      @include prefix(3, $desktop);
     }
     .nav {
       @include with-grid-settings(12,5em,1em,1em) {
@@ -55,7 +64,7 @@
                 display: inline;
                 float: right;
                 background: transparent;
-                padding: 0 .9em;
+                padding: 0 .7em;
                 border-bottom: 0;
               }
             }
@@ -64,10 +73,15 @@
       }
     }
     .content {
+      /*@include susy-grid-background;*/
       @include span-columns(8, $desktop);
+      
     }
     .summary { 
-      @include span-columns(4 omega, $desktop); 
+      @include span-columns(4 omega, $desktop);
+      h3, p {
+        padding: 0 10px;
+      } 
     }
   }  
 }
