@@ -15,10 +15,8 @@
   <body class="<%= page_classes %>">
     <div id="wrapper">
       <%= partial "shared/header" %>
-      <section class="page" id="wrapper">
-        <article class="main" role="main">
+      <section class="page">
           <%= yield %>
-        </article>
         <%= partial "shared/nav" %>
         <div id="footer_push"></div>
       </section>
