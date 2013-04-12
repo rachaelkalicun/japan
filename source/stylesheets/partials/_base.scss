@@ -1,20 +1,21 @@
 html {
-  background: url(images/background.jpg) no-repeat center center fixed; 
+  height: 100%;
+  background: #ddd url(images/background.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 100%;
 }
+
+
 
 body {
   height: 100%;
   @import "compass/layout/sticky-footer";
-  @include sticky-footer(72px, "#wrapper", "#footer_push", "#footer");
+  @include sticky-footer(50px, "#wrapper", "#footer_push", "#footer");
   -webkit-animation: bugfix infinite 1s; /*checkbox hack (nav) fix for android*/
   font-family: "Lato", "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 300;
-  /*background-color: $light;*/
   color: $dark;
   a {
     color: $link;
@@ -26,7 +27,7 @@ body {
 
   img, object, embed, iframe, .iframe {
     display: block;
-    height: auto;
+    /*height: auto;*/
     max-width: 100%;
     border: 0;
   }
@@ -43,3 +44,4 @@ body {
   from {padding:0;} 
   to {padding:0;} 
 }
+
