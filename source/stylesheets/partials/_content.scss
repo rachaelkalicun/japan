@@ -28,7 +28,6 @@ ul, ol {
   #map {
     border: 2px solid white;
     margin-top: 50px;
-    @include opacity(.9);
     @include single-box-shadow;
     height: 310px;
     h3, p {
@@ -38,6 +37,9 @@ ul, ol {
     }
     h3 {
       margin-top: 10px;
+    }
+    .marker-popup {
+      width: 180px;
     }
   }
   .content {

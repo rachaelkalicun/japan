@@ -7,7 +7,7 @@ $(document).ready(function(){
         var features = [{
             "geometry": { "type": "Point", "coordinates": [139.7685224, 35.6800712]},
             "properties": {
-                "image": "http://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/DCmontage4.jpg/250px-DCmontage4.jpg",
+                "image": "/images/map_thumbs/tokyo.jpg",
                 "url": "/blog/tokyo",
                 "city": "Tokyo",
                 'marker-color': '#000',
@@ -17,7 +17,7 @@ $(document).ready(function(){
         }, {
             "geometry": { "type": "Point", "coordinates": [139.687795, 36.7279992]},
             "properties": {
-                "image": "http://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Chicago_montage.jpg/300px-Chicago_montage.jpg",
+                "image": "/images/map_thumbs/nikko.jpg",
                 "url": "/blog/nikko",
                 "city": "Nikko",
                 'marker-color': '#815f65',
@@ -27,7 +27,7 @@ $(document).ready(function(){
         }, {
             "geometry": { "type": "Point", "coordinates": [137.972048, 36.2376227]},
             "properties": {
-                "image": "http://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/NYC_Montage_2011.jpg/275px-NYC_Montage_2011.jpg",
+                "image": "/images/map_thumbs/matsumoto.jpg",
                 "url": "/blog/matsumoto",
                 "city": "Matsumoto",
                 'marker-color': '#000',
@@ -37,7 +37,7 @@ $(document).ready(function(){
         }, {
             "geometry": { "type": "Point", "coordinates": [137.2510322, 36.1396246]},
             "properties": {
-                "image": "http://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/NYC_Montage_2011.jpg/275px-NYC_Montage_2011.jpg",
+                "image": "/images/map_thumbs/takayama.jpg",
                 "url": "/blog/takayama",
                 "city": "Takayama",
                 'marker-color': '#4f5641',
@@ -47,7 +47,7 @@ $(document).ready(function(){
         }, {
             "geometry": { "type": "Point", "coordinates": [135.2, 35.5]},
             "properties": {
-                "image": "http://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/NYC_Montage_2011.jpg/275px-NYC_Montage_2011.jpg",
+                "image": "/images/map_thumbs/kyoto.jpg",
                 "url": "/blog/kyoto",
                 "city": "Kyoto",
                 'marker-color': '#4f5641',
@@ -57,7 +57,7 @@ $(document).ready(function(){
         }, {
             "geometry": { "type": "Point", "coordinates": [135.9813217, 35]},
             "properties": {
-                "image": "http://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/NYC_Montage_2011.jpg/275px-NYC_Montage_2011.jpg",
+                "image": "/images/map_thumbs/nara.jpg",
                 "url": "/blog/nara",
                 "city": "Nara",
                 'marker-color': '#815f65',
@@ -67,7 +67,7 @@ $(document).ready(function(){
         }, {
             "geometry": { "type": "Point", "coordinates": [135.1146944, 34.6852929]},
             "properties": {
-                "image": "http://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/NYC_Montage_2011.jpg/275px-NYC_Montage_2011.jpg",
+                "image": "/images/map_thumbs/osaka.jpg",
                 "url": "/blog/osaka",
                 "city": "Osaka",
                 'marker-color': '#000',
@@ -77,7 +77,7 @@ $(document).ready(function(){
         }, {
             "geometry": { "type": "Point", "coordinates": [135.5864, 34.2125]},
             "properties": {
-                "image": "http://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/NYC_Montage_2011.jpg/275px-NYC_Montage_2011.jpg",
+                "image": "/images/map_thumbs/mt-koya.jpg",
                 "url": "/blog/mt-koya",
                 "city": "Mt. Koya",
                 'marker-color': '#4f5641',
@@ -87,7 +87,7 @@ $(document).ready(function(){
         }, {
             "geometry": { "type": "Point", "coordinates": [132.7518156, 34.7]},
             "properties": {
-                "image": "http://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/NYC_Montage_2011.jpg/275px-NYC_Montage_2011.jpg",
+                "image": "/images/map_thumbs/hiroshima.jpg",
                 "url": "/blog/hiroshima",
                 "city": "Hiroshima",
                 'marker-color': '#000',
@@ -97,7 +97,7 @@ $(document).ready(function(){
         }, {
             "geometry": { "type": "Point", "coordinates": [132.3092638, 34.2720633]},
             "properties": {
-                "image": "http://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/NYC_Montage_2011.jpg/275px-NYC_Montage_2011.jpg",
+                "image": "/images/map_thumbs/miyajima.jpg",
                 "url": "/blog/miyajima",
                 "city": "Miyajima",
                 'marker-color': '#4f5641',
@@ -127,14 +127,14 @@ $(document).ready(function(){
         // Set a custom formatter for tooltips
         // Provide a function that returns html to be used in tooltip
         interaction.formatter(function(feature) {
-            var o = '<img height="65" width="100" src="' + feature.properties.image + '">' + '<p style="margin: 0">' + feature.properties.city + '</p>';
+            var o = '<a href="' + feature.properties.url + '"><img height="135" width="180" src="' + feature.properties.image + '"></a>' + '<p style="margin: 0">' + feature.properties.city + '</p>';
             return o;
         });
 
 
         // Set iniital center and zoom
         map.centerzoom({
-            lat: 36.8,
+            lat: 39,
             lon: 137
         }, 5);
 
