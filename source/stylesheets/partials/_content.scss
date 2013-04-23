@@ -2,14 +2,19 @@ h1, h2, h3 {
   color: $dark;
   font-family: 'Playfair Display SC', serif;
   font-weight: normal;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 p {
-  padding: 0 10px;
+  padding: 0 20px;
+}
+
+ul, ol {
+  padding: 0 20px 0 40px;
 }
 
 .page {
+  
   #map {
     border: 2px solid white;
     margin-top: 50px;
@@ -27,9 +32,27 @@ p {
   }
   .content {
     background: $light;
-    @include opacity(.9);
+    margin-bottom: 20px;
+    img {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .photo {
+      text-align: center;
+      font-size: 80%;
+      /*font-weight: bold;*/
+      color: #111;
+    }
   }
   .summary {
-    
+    background: $light;
+  @include opacity(.9);
+  
+  }
+}
+
+body.index {
+  .page {
+    background: none;
   }
 }

@@ -1,11 +1,11 @@
 //= require jquery
 //= require_tree .
 
-$.hisrc.speedTest();
+// $.hisrc.speedTest();
 
 $(document).ready(function(){
   $(".hisrc img").hisrc({
-    useTransparentGif: true,
-    transparentGifSrc: '/images/spacer.gif' // use for IE
+    // useTransparentGif: true,
+    // transparentGifSrc: '/images/spacer.gif' // use for IE
   });
 });
