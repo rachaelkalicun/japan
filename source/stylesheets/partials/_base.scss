@@ -35,12 +35,9 @@ body {
   }
 
   img, object, embed, iframe, .iframe {
-    /*display: block;*/
+    display: block;
     height: auto;
-    /*max-width: 100%;*/
-    /*border: 0;*/
-    width: 94%;
-    /*padding: 0 15px;*/
+    max-width: 100%;
   }
 
   @media \0screen {
